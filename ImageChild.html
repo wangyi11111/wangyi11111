@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/ImageChild.css">
+  <link rel="icon" href="./img/aglz9-pny4j.ico
+  ">
+</head>
+
+<body>
+  <div class="Content">
+    <div class="MyImg"></div>
+
+  </div>
+</body>
+
+<script>
+  // function queryURLParams(url) {
+  //   let pattern = /(\w+)=(\w+)/ig; //定义正则表达式
+  //   let parames = {}; // 定义参数对象
+  //   url.replace(pattern, ($, $1, $2) => {
+  //     parames[$1] = $2;
+  //   });
+  //   return parames;
+  // }
+  function queryURLParams(URL) {
+    let url = URL.split("?")[1];
+    const urlSearchParams = new URLSearchParams(url);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    return params
+  }
+  let Params = queryURLParams(window.location.href)
+  let ParamsArr = Params.id.split(',')
+  ParamsArr.forEach((item, index) => {
+    let MyImg = document.querySelector('.MyImg')
+    let img = document.createElement('img')
+    img.src = item
+    MyImg.appendChild(img)
+  })
+  // let img = document.querySelector('.MyImg')
+  // img.src = Params.id
+
+</script>
+
+</html>

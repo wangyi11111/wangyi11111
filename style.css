@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    list-style-type: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+html{
+    width: 100%;
+}
+.header{
+    overflow: hidden;
+    margin: 20px;
+    display: block;
+}
+.header .title{
+    float: left;
+    font-size: 30px;
+    display: block;
+}
+.header .resume{
+    float: right;
+    display: flex;
+    text-decoration: underline;
+}
+.top {
+    overflow: hidden;
+    display: block;
+    height: 500px;
+}
+.top p{
+    
+    text-align: center;
+}
+.top p a{
+    text-decoration: underline;
+}
+.top p a:hover{
+    color: white;
+    background-color: black;
+}
+.top .main{
+    margin: 100px 0  0 0;
+    font-size: 20px;
+}
+.top .sub{
+    font-weight:200;
+    margin: 50px 0 100px 0;
+    font-size: 16px;
+}
+
+.top .social{
+    display: flex;
+    justify-content:space-between;
+    height: 25px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.top .social a img{
+    fill: black;
+    height: 25px;
+
+}
+.top .social img:hover{
+    opacity: 50%;
+}
+.gallery{
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+.gallery ul{
+    justify-content:space-around;
+    display: block;
+}
+.gallery .tag{
+    display: flex;
+    padding: 2px;
+
+}
+.gallery .tag li{
+    display: block;
+    padding: 2px;
+    text-decoration: underline;
+    /* background-color: red; */
+    margin: 20px 0;
+
+}
+.gallery .tag li button{
+    padding: 4px;
+
+}
+.gallery .tag button:hover{
+    color: white;
+    background-color: black;
+}
+
+.gallery .cover{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-wrap:wrap;
+}
+.gallery .cover .proj{
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+.gallery .cover .proj img:hover{
+    opacity: 0.8;
+}
+.gallery .cover img{
+    width: 300px;
+}
