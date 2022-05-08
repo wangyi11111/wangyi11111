@@ -30,13 +30,18 @@
                 <div class="btn2">
                     <div class="top">
                         <p class="main">I am a T-shape designer deep in <a>visual design</a>,<br>
-                            currently work in <a>blockchain</a> industry.</p>
+                            currently work in  <button class="button" data-filter=".3D">blockchain</button> industry.</p>
                         <p class="sub">Capable in many
                             interesting design tools:
                             <br>
                             <!-- <a>Cinema 4D</a>,<a>Adobe Creative Suit</a>,<a>Marvelous Designer</a>,<a>Procreate</a>,<a>Nomad</a>. -->
                             <!-- <button class="button" data-filter=".3D">3D</button> -->
-
+                            <button class="button Mychecked is-checked" data-filter=".Cinema4D">Cinema4D</button>，
+                            <button class="button" data-filter=".AdobeCreativeSuit">AdobeCreativeSuit</button>，
+                            <button class="button" data-filter=".illustration">illustration</button>，
+                            <button class="button" data-filter=".MarvelousDesigner">MarvelousDesigner</button>，
+                            <button class="button" data-filter=".Procreate">Procreate</button>，
+                            <button class="button" data-filter=".Nomad">Nomad</button>
                         </p>
 
                         <div class="social">
@@ -57,29 +62,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn1"></div>
-                <!-- <button class="button Mychecked" data-filter="*">all</button>
-                <button class="button" data-filter=".project">project</button>
-                <button class="button" data-filter=".illustration">illustration</button>
-                <button class="button" data-filter=".3D">3D</button>
-                <button class="button" data-filter=".UX">UX</button>
-                <button class="button" data-filter=".UI">UI</button>
-                <button class="button" data-filter=".visualDesign">visual design</button>
-                <button class="button" data-filter=".blockchain">blockchain</button> -->
+                <div class="btn1">
+                    <button class="button Mychecked is-checked" data-filter="*">all</button>
+                    <button class="button" data-filter=".project">project</button>
+                    <button class="button" data-filter=".illustration">illustration</button>
+                    <button class="button" data-filter=".3D">3D</button>
+                    <button class="button" data-filter=".UX">UX</button>
+                    <button class="button" data-filter=".UI">UI</button>
+                    <button class="button" data-filter=".visualDesign">visual design</button>
+                    <button class="button" data-filter=".blockchain">blockchain</button>
+                </div>
+
             </div>
 
             <div class="grid">
-                <!-- <div class="element-item transition metal " data-category="transition">
-                    <img class="MyImg" data-MySrc="./img/covers/Group 6.png" src="./img/covers/Group 6.png">
+                <div class="element-item 3D Cinema4D project visual design UI metal " data-category="transition">
+                    <img class="MyImg"
+                        data-MySrc="./img/proj/AOZ/1.png,./img/proj/AOZ/2.png,./img/proj/AOZ/3.png,./img/proj/AOZ/4.png,./img/proj/AOZ/5.png"
+                        src="./img/covers/Group 6.png">
                 </div>
                 <div class="element-item project metal " data-category="project">
-                    <img class="MyImg" data-MySrc="./img/covers/zksquare 拷贝 1.png" src="./img/covers/zksquare 拷贝 1.png">
+                    <img class="MyImg" data-MySrc="./img/covers/zksquare 拷贝 1.png,./img/covers/zksquare 拷贝 1.png"
+                        src="./img/covers/zksquare 拷贝 1.png">
                 </div>
                 <div class="element-item illustration metal " data-category="illustration">
-                    <img src="./img/covers/zing2.jpg">
+                    <img src="./img/covers/zing2.jpg" class="MyImg" data-MySrc="./img/proj/zing/0.jpg,./img/proj/zing/1.jpg,./img/proj/zing/2.jpg,./img/proj/zing/3.jpg,./img/proj/zing/4.jpg,./img/proj/zing/5.jpg,./img/proj/zing/6.jpg,./img/proj/zing/7.jpg,">
                 </div>
-                <div class="element-item 3D metal " data-category="3D">
-                    <img src="./img/covers/CQT.jpg">
+                <div class="element-item 3D Cinema4D metal " data-category="3D ">
+                    <img class="MyImg" data-MySrc="./img/covers/Group 6.png" src="./img/covers/CQT.jpg">
                 </div>
                 <div class="element-item UI metal " data-category="UI">
                     <img src="./img/covers/html_0001.png">
@@ -92,7 +102,7 @@
                 </div>
                 <div class="element-item blockchain metal " data-category="blockchain">
                     <img src="./img/covers/Untitled 22.jpg">
-                </div> -->
+                </div>
             </div>
         </div>
 
@@ -173,209 +183,238 @@
             var body = document.querySelector("body")
             body.onmouseover = function () {
                 console.log(this.style.cursor);
-                this.style.cursor = 'url(./img/aw8oi-iuw7k.ico),auto';
+                this.style.cursor = 'url(./img/ahzbt-rrpwj.ico),auto';
             }
-            function unique(arr) {
-                for (var i = 0; i < arr.length; i++) {
-                    for (var j = i + 1; j < arr.length; j++) {
-                        if (arr[i] == arr[j]) {         //第一个等同于第二个，splice方法删除第二个
-                            arr.splice(j, 1);
-                            j--;
-                        }
-                    }
-                }
-                return arr;
-            }
-            const Arr2 = [
-                {
-                    Type: 'Cinema4D',
-                    url: [
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png'
-                    ]
-                },
-                {
-                    Type: 'AdobeCreativeSuit',
-                    url: [
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png'
-                    ]
-                },
-                {
-                    Type: 'MarvelousDesigner',
-                    url: [
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png'
-                    ]
-                },
-                {
-                    Type: 'Procreate',
-                    url: [
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png'
-                    ]
-                },
-                {
-                    Type: 'Nomad',
-                    url: [
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png'
-                    ]
-                }
+            // function unique(arr) {
+            //     for (var i = 0; i < arr.length; i++) {
+            //         for (var j = i + 1; j < arr.length; j++) {
+            //             if (arr[i] == arr[j]) {         //第一个等同于第二个，splice方法删除第二个
+            //                 arr.splice(j, 1);
+            //                 j--;
+            //             }
+            //         }
+            //     }
+            //     return arr;
+            // }
+            // const Arr2 = [
+            //     {
+            //         Type: 'Cinema4D',
+            //         url: [
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'AdobeCreativeSuit',
+            //         url: [
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'MarvelousDesigner',
+            //         url: [
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'Procreate',
+            //         url: [
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'Nomad',
+            //         url: [
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png'
+            //         ]
+            //     }
 
-            ]
+            // ]
 
-            const Arr = [
-                {
-                    Type: 'all',
-                    url: [
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png'
-                    ]
-                },
-                {
-                    Type: 'project',
-                    url: [
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png'
-                    ]
-                },
-                {
-                    Type: 'project',
-                    url: [
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png',
-                        './img/covers/Group 6.png'
-                    ]
-                },
-                {
-                    Type: '3D',
-                    url: [
-                        './img/covers/CQT.jpg',
-                        './img/covers/CQT.jpg',
-                        './img/covers/CQT.jpg'
-                    ]
-                },
-                {
-                    Type: 'UI',
-                    url: [
-                        './img/covers/html_0001.png',
-                        './img/covers/html_0001.png',
-                        './img/covers/html_0001.png'
-                    ]
-                },
-                {
-                    Type: 'MyUrl',
-                    url: [
-                        './img/covers/html_0001.png',
-                        './img/covers/html_0001.png',
-                        './img/covers/html_0001.png'
-                    ]
-                },
-                {
-                    Type: 'MyUrl',
-                    url: [
-                        './img/covers/html_0001.png',
-                        './img/covers/html_0001.png',
-                        './img/covers/html_0001.png'
-                    ]
-                },
-                {
-                    Type: 'My',
-                    url: [
-                        './img/covers/html_0001.png',
-                        './img/covers/html_0001.png',
-                        './img/covers/html_0001.png'
-                    ]
-                }
-            ]
-            const grid = document.querySelector('.grid')
-            const btn1 = document.querySelector('.btn1')
-            const sub = document.querySelector('.sub')
-            let ValueArr = unique(Arr.map(item => item.Type))
-            let ValueArr2 = unique(Arr2.map(item => item.Type))
-            ValueArr.forEach((itemS, index) => {
-                let button = document.createElement('button')
-                if (index == 0) {
-                    button.classList.add('Mychecked')
-                    button.classList.add('is-checked')
-                }
-                button.classList.add('button')
-                if (itemS == 'all') {
-                    button.setAttribute('data-filter', `*`)
-                } else {
-                    button.setAttribute('data-filter', `.${itemS}`)
+            // const Arr = [
+            //     {
+            //         Type: 'all',
+            //         url: [
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'project',
+            //         url: [
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'project',
+            //         url: [
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png',
+            //             './img/covers/Group 6.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: '3D',
+            //         url: [
+            //             './img/covers/CQT.jpg',
+            //             './img/covers/CQT.jpg',
+            //             './img/covers/CQT.jpg'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'UI',
+            //         url: [
+            //             './img/covers/html_0001.png',
+            //             './img/covers/html_0001.png',
+            //             './img/covers/html_0001.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'MyUrl',
+            //         url: [
+            //             './img/covers/html_0001.png',
+            //             './img/covers/html_0001.png',
+            //             './img/covers/html_0001.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'MyUrl',
+            //         url: [
+            //             './img/covers/html_0001.png',
+            //             './img/covers/html_0001.png',
+            //             './img/covers/html_0001.png'
+            //         ]
+            //     },
+            //     {
+            //         Type: 'My',
+            //         url: [
+            //             './img/covers/html_0001.png',
+            //             './img/covers/html_0001.png',
+            //             './img/covers/html_0001.png'
+            //         ]
+            //     }
+            // ]
+            // const grid = document.querySelector('.grid')
+            // const btn1 = document.querySelector('.btn1')
+            // const sub = document.querySelector('.sub')
+            // let ValueArr = unique(Arr.map(item => item.Type))
+            // let ValueArr2 = unique(Arr2.map(item => item.Type))
+            // ValueArr.forEach((itemS, index) => {
+            //     let button = document.createElement('button')
+            //     if (index == 0) {
+            //         button.classList.add('Mychecked')
+            //         button.classList.add('is-checked')
+            //     }
+            //     button.classList.add('button')
+            //     if (itemS == 'all') {
+            //         button.setAttribute('data-filter', `*`)
+            //     } else {
+            //         button.setAttribute('data-filter', `.${itemS}`)
 
-                }
-                button.innerText = itemS
-                btn1.appendChild(button)
-            })
-            ValueArr2.forEach((itemS, index) => {
-                let button = document.createElement('button')
-                button.classList.add('button')
-                if (itemS == 'all') {
-                    button.setAttribute('data-filter', `*`)
-                } else {
-                    button.setAttribute('data-filter', `.${itemS}`)
+            //     }
+            //     button.innerText = itemS
+            //     btn1.appendChild(button)
+            // })
+            // ValueArr2.forEach((itemS, index) => {
+            //     let button = document.createElement('button')
+            //     button.classList.add('button')
+            //     if (itemS == 'all') {
+            //         button.setAttribute('data-filter', `*`)
+            //     } else {
+            //         button.setAttribute('data-filter', `.${itemS}`)
 
-                }
-                button.innerText = itemS
-                sub.appendChild(button)
-            })
-            Arr.forEach((item, index) => {
-                let elementItem = document.createElement('div')
-                elementItem.className = 'element-item'
-                elementItem.classList.add(item.Type)
-                elementItem.setAttribute('data-category', item.Type)
-                elementItem.onmouseover = function () {
-                    if (item.url.length > 1) {
+            //     }
+            //     button.innerText = itemS
+            //     sub.appendChild(button)
+            // })
+            // Arr.forEach((item, index) => {
+            //     let elementItem = document.createElement('div')
+            //     elementItem.className = 'element-item'
+            //     elementItem.classList.add(item.Type)
+            //     elementItem.setAttribute('data-category', item.Type)
+            //     elementItem.onmouseover = function () {
+            //         if (item.url.length > 1) {
+            //             this.style.cursor = 'url(./img/a7qh0-aizf2.ico),auto';
+            //         }
+            //     }
+            //     let img = document.createElement('img')
+            //     img.src = item.url[0]
+            //     img.classList.add('MyImg')
+            //     img.setAttribute('data-MySrc', item.url)
+            //     elementItem.appendChild(img)
+            //     grid.appendChild(elementItem)
+            // })
+            // Arr2.forEach((item, index) => {
+            //     let elementItem = document.createElement('div')
+            //     elementItem.className = 'element-item'
+            //     elementItem.classList.add(item.Type)
+            //     elementItem.setAttribute('data-category', item.Type)
+            //     elementItem.onmouseover = function () {
+            //         if (item.url.length > 1) {
+            //             this.style.cursor = 'url(./img/a7qh0-aizf2.ico),auto';
+            //         }
+            //     }
+            //     let img = document.createElement('img')
+            //     img.src = item.url[0]
+            //     img.classList.add('MyImg')
+            //     img.setAttribute('data-MySrc', item.url)
+            //     elementItem.appendChild(img)
+            //     grid.appendChild(elementItem)
+            //     console.log(grid.style);
+            // })
+
+            // const res = document.querySelectorAll('.MyImg')
+            // res.forEach((item, index) => {
+            //     console.log(item);
+            //     item.addEventListener('click', function (e) {
+            //         console.log(e);
+            //         console.log(item.attributes['data-MySrc'].value);
+            //         // window.location.href = 'ImageChild.html?id=' + item.attributes['data-MySrc'].value;
+            //         // window.open = ('ImageChild.html')
+            //         window.open('ImageChild.html?id=' + item.attributes['data-MySrc'].value, '_blank')
+            //     })
+            // })
+
+            const elementItem = document.querySelectorAll('.element-item')
+            console.log(elementItem);
+            const img = document.querySelectorAll('.MyImg')
+            img.forEach((item, index) => {
+                console.log(item.attributes['data-MySrc'].value);
+                if (item.attributes['data-MySrc'].value.split(',').length >= 1 || item.attributes['data-MySrc'].value) {
+                    item.onmouseover = function () {
                         this.style.cursor = 'url(./img/a7qh0-aizf2.ico),auto';
                     }
+                    console.log();
+                    let MORE = document.createElement('div')
+                    MORE.innerText = 'MORE'
+                    MORE.classList.add('More')
+                    item.offsetParent.appendChild(MORE)
                 }
-                let img = document.createElement('img')
-                img.src = item.url[0]
-                img.classList.add('MyImg')
-                img.setAttribute('data-MySrc', item.url)
-                elementItem.appendChild(img)
-                grid.appendChild(elementItem)
-            })
-            Arr2.forEach((item, index) => {
-                let elementItem = document.createElement('div')
-                elementItem.className = 'element-item'
-                elementItem.classList.add(item.Type)
-                elementItem.setAttribute('data-category', item.Type)
-                elementItem.onmouseover = function () {
-                    if (item.url.length > 1) {
-                        this.style.cursor = 'url(./img/a7qh0-aizf2.ico),auto';
-                    }
-                }
-                let img = document.createElement('img')
-                img.src = item.url[0]
-                img.classList.add('MyImg')
-                img.setAttribute('data-MySrc', item.url)
-                elementItem.appendChild(img)
-                grid.appendChild(elementItem)
-                console.log(grid.style);
-            })
-
-            const res = document.querySelectorAll('.MyImg')
-            res.forEach((item, index) => {
-                console.log(item);
                 item.addEventListener('click', function (e) {
                     console.log(e);
                     console.log(item.attributes['data-MySrc'].value);
                     // window.location.href = 'ImageChild.html?id=' + item.attributes['data-MySrc'].value;
                     // window.open = ('ImageChild.html')
-                    window.open('ImageChild.html?id=' + item.attributes['data-MySrc'].value, '_blank')
+                    console.log();
+                    if (item.attributes['data-MySrc'].value.split(',').length >= 1) {
+                        window.open('ImageChild.html?id=' + item.attributes['data-MySrc'].value, '_blank')
+                    }
+
                 })
             })
+
             const button = document.querySelectorAll('.button')
             button.forEach((item, index) => {
                 item.addEventListener('click', function (e) {
@@ -387,27 +426,28 @@
                 })
 
             })
-            window.onload = function () {
-                let btn = null
-                btn = document.querySelectorAll('.Mychecked')
-                let button = document.querySelectorAll('.button')
-                button[1].addEventListener('click', function (e) {
-                    console.log('dwada');
-                })
-                let event = document.createEvent('MouseEvents')
-                event.initMouseEvent('click', true, true, document.defaultView, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
-                button[1].dispatchEvent(event)
 
-                btn[0].addEventListener('click', function (e) {
-                    console.log('dwada');
-                })
-                let eventS = document.createEvent('MouseEvents')
-                eventS.initMouseEvent('click', true, true, document.defaultView, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+            // window.onload = function () {
+            //     let btn = null
+            //     btn = document.querySelectorAll('.Mychecked')
+            //     let button = document.querySelectorAll('.button')
+            //     button[1].addEventListener('click', function (e) {
+            //         console.log('dwada');
+            //     })
+            //     let event = document.createEvent('MouseEvents')
+            //     event.initMouseEvent('click', true, true, document.defaultView, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+            //     button[1].dispatchEvent(event)
 
-                btn[0].dispatchEvent(eventS)
+            //     btn[0].addEventListener('click', function (e) {
+            //         console.log('dwada');
+            //     })
+            //     let eventS = document.createEvent('MouseEvents')
+            //     eventS.initMouseEvent('click', true, true, document.defaultView, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+
+            //     btn[0].dispatchEvent(eventS)
 
 
-            }
+            // }
         </script>
         <script script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
