@@ -1,3 +1,6 @@
+.big-demo{
+  width: 100%;
+}
 .filters{
   display: flex;
   flex-direction: column;
@@ -7,7 +10,12 @@
   margin-bottom: 20px;
 }
 .filters .btn1 {
-  display: flex;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }    
 .Mychecked{
   font-size: 18px;
@@ -24,9 +32,10 @@
   font-weight:200;
     margin: 10px 0 0 0;
     font-size: 16px;
-  margin-right: 10px;
+  margin-right: 0px;
   padding: 5px 5px 0 5px;
-  border-bottom: 1px solid #000;
+  text-decoration: underline;
+
 }
 .sub >button:hover{
   background-color: #000;
@@ -35,15 +44,20 @@
   cursor: pointer;
   
 }
-
+.filters> .btn2{
+  width: 100%;
+  padding: 0 10px;
+}
 .filters> .btn1 >button{
   border:none;
   background:none;
   font-size: 18px;
   font-weight: 100;
-  margin-right: 30px;
+  margin-right: 20px;
   padding: 5px 5px 0 5px;
-  border-bottom: 1px solid #000;
+  text-decoration: underline;
+
+
 }
 .filters >.btn1 > button:hover{
   background-color: #000;
@@ -59,7 +73,7 @@
   justify-content:center;
   flex-wrap: wrap;
   align-items: center;
-  margin: auto;
+  margin:0 auto;
 }
 @media screen and (max-width: 800px) {
   .grid{
@@ -69,12 +83,9 @@
 .element-item {
   margin:0 auto;
   box-sizing: border-box;
-  width: 40%;
   max-width: 300px;
-  width: 31%;
-  margin-right: 10px;
-  margin: 5px; 
-  padding: 10px; 
+  width: 31.5%;
+  margin:0 3px; 
   color: #262524;
 }
 
@@ -87,6 +98,21 @@
   height: 100%;
 }
 
+.element-item .More{
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 30%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-decoration: underline;
+  border:black solid 1px ;
+  cursor: url(../img/a7qh0-aizf2.ico),auto;
+}
 
 /* .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
 .element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
