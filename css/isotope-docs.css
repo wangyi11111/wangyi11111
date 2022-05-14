@@ -39,7 +39,6 @@
 }
 .sub >button:hover{
   background-color: #000;
-  border-bottom: 1px solid #fff;
   color:#fff;
   cursor: pointer;
   
@@ -61,12 +60,27 @@
 }
 .filters >.btn1 > button:hover{
   background-color: #000;
-  border-bottom: 1px solid #fff;
   color:#fff;
   cursor: pointer;
   
 }
+.top .main button{
+  border:none;
+  background:none;
+  font-weight:200;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+  margin-right: 0px;
+  padding: 5px 5px 0 5px;
+  text-decoration: underline;
 
+}
+.top .main button:hover{
+  background-color: #000;
+  color:#fff;
+  cursor: pointer;
+}
+  
 .grid{
   width:50vw;
   display:flex;
@@ -97,6 +111,11 @@
   width: 100%;
   height: 100%;
 }
+.element-item  > a img{
+  width: 100%;
+  height: 100%;
+  cursor: url(../img/a7qh0-aizf2.ico),auto;
+}
 
 .element-item .More{
   position: absolute;
@@ -111,6 +130,24 @@
   background-color: rgb(255, 255, 255);
   text-decoration: underline;
   border:black solid 1px ;
+  cursor: url(../img/a7qh0-aizf2.ico),auto;
+}
+.element-item .link{
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 30%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-decoration: underline;
+  border:black solid 1px ;
+  cursor: url(../img/a7qh0-aizf2.ico),auto;
+}
+.linkpar{
   cursor: url(../img/a7qh0-aizf2.ico),auto;
 }
 
