@@ -1,5 +1,17 @@
+
 .big-demo{
   width: 100%;
+}
+.button{
+  border:none;
+  background:none;
+  font-weight:200;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+  margin-right: 0px;
+  padding: 5px 5px 0 5px;
+  text-decoration: underline ;
+  color:#000;
 }
 .filters{
   display: flex;
@@ -20,13 +32,13 @@
 .Mychecked{
   font-size: 18px;
   font-weight: 100;
-  margin-right: 30px;
+  margin-right: 10px;
   padding: 5px 5px 0 5px;
   border-bottom: 1px solid #000;
   background-color: #000 !important;
-  color:#fff;
+  color:#fff !important;
 }
-.sub >button{
+.sub > button{
   border:none;
   background:none;
   font-weight:200;
@@ -34,27 +46,29 @@
     font-size: 16px;
   margin-right: 0px;
   padding: 5px 5px 0 5px;
-  text-decoration: underline;
+  text-decoration: underline ;
+  color:#000;
 
 }
-.sub >button:hover{
+.sub > button:hover{
   background-color: #000;
   color:#fff;
   cursor: pointer;
   
 }
-.filters> .btn2{
+.filters > .btn2{
   width: 100%;
   padding: 0 10px;
 }
-.filters> .btn1 >button{
+.filters > .btn1 >button{
   border:none;
   background:none;
   font-size: 18px;
   font-weight: 100;
-  margin-right: 20px;
-  padding: 5px 5px 0 5px;
+  margin-bottom: 10px;
   text-decoration: underline;
+  color:#000 ;
+
 
 
 }

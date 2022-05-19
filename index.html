@@ -460,54 +460,52 @@
                     }
                 }, 50)
             }
-            window.onload = function () {
-                const elementItem = document.querySelectorAll('.element-item')
-                const img = document.querySelectorAll('.MyImg')
-                img.forEach((item, index) => {
-                    console.log('dwadawd', item);
-                    console.log(item.attributes['data-MySrc'].value);
-                    if (item.attributes['data-MySrc'].value.split(',').length >= 1 || item.attributes['data-MySrc']
-                        .value) {
-                        item.onmouseover = function () {
-                            this.style.cursor = 'url(./img/a7qh0-aizf2.ico),auto';
-                        }
-
-                        imgLoad(item, function () {
-                            console.log('加载完');
-                            let MORE = document.createElement('div')
-                            MORE.innerText = 'MORE'
-                            MORE.classList.add('More')
-                            item.offsetParent.appendChild(MORE)
-                        })
-
+            const elementItem = document.querySelectorAll('.element-item')
+            const img = document.querySelectorAll('.MyImg')
+            img.forEach((item, index) => {
+                console.log('dwadawd', item);
+                console.log(item.attributes['data-MySrc'].value);
+                if (item.attributes['data-MySrc'].value.split(',').length >= 1 || item.attributes['data-MySrc']
+                    .value) {
+                    item.onmouseover = function () {
+                        this.style.cursor = 'url(./img/a7qh0-aizf2.ico),auto';
                     }
-                    item.addEventListener('click', function (e) {
-                        console.log(e);
-                        console.log(item.attributes['data-MySrc'].value);
-                        // window.location.href = 'ImageChild.html?id=' + item.attributes['data-MySrc'].value;
-                        // window.open = ('ImageChild.html')
-                        console.log();
-                        if (item.attributes['data-MySrc'].value.split(',').length >= 1) {
-                            window.open('ImageChild.html?id=' + item.attributes['data-MySrc'].value,
-                                '_blank')
-                        }
 
-                    })
-                })
-
-
-                const button = document.querySelectorAll('.button')
-                button.forEach((item, index) => {
-                    item.addEventListener('click', function (e) {
-                        console.log(button[index] == item);
-                        for (let i = 0; i < button.length; i++) {
-                            button[i].classList.remove('Mychecked')
-                        }
-                        item.classList.add('Mychecked')
+                    imgLoad(item, function () {
+                        console.log('加载完');
+                        let MORE = document.createElement('div')
+                        MORE.innerText = 'MORE'
+                        MORE.classList.add('More')
+                        item.offsetParent.appendChild(MORE)
                     })
 
+                }
+                item.addEventListener('click', function (e) {
+                    console.log(e);
+                    console.log(item.attributes['data-MySrc'].value);
+                    // window.location.href = 'ImageChild.html?id=' + item.attributes['data-MySrc'].value;
+                    // window.open = ('ImageChild.html')
+                    console.log();
+                    if (item.attributes['data-MySrc'].value.split(',').length >= 1) {
+                        window.open('ImageChild.html?id=' + item.attributes['data-MySrc'].value,
+                            '_blank')
+                    }
+
                 })
-            }
+            })
+
+
+            const button = document.querySelectorAll('.button')
+            button.forEach((item, index) => {
+                item.addEventListener('click', function (e) {
+                    console.log(button[index] == item);
+                    for (let i = 0; i < button.length; i++) {
+                        button[i].classList.remove('Mychecked')
+                    }
+                    item.classList.add('Mychecked')
+                })
+
+            })
 
 
 
